@@ -1,41 +1,39 @@
-
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs-cz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Food4u</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-
     <div id="website">
         <header>
             <div class="logo">
-                Food4u
+                <img src="img/logo1.png" alt="Logo Frimy">
             </div>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li><a href="#">Úvod</a></li>
+                    <li><a href="#">O nás</a></li>
                     <li><a href="#">Produkty</a></li>
                     <li><a href="#">Kontakt</a></li>
                     <li><span class="theme-switch"></span></li>
                 </ul>
             </nav>
         </header>
-
         <div class="banner">
             <div class="banner-image">
             </div>
             <div class="banner-text">
                 <h1>Vítejte na naší webové stránce</h1>
-                <p>Nabízíme nejvyšší kvalitu cateringu</p>
+                <p>Nabízíme nejvyšší kvalitu dřeva</p>
             </div>
         </div>
 
         <div class="cta">
             <h2>Proč si vybrat naše produkty?</h2>
-            <p>Naše distribuce nabízí nejvyšší kvalitu potravin a libovolný výběr přizpůsobený vaším potřebám</p>
+            <p>Naše firma nabízí nejvyšší kvalitu dřeva a naše produkty jsou na míru Vašim potřebám.</p>
         </div>
 
 
@@ -44,41 +42,41 @@
             <div class="feature">
                 <div class="feature-head">
                     <span class="feature-icon icon-time"></span>
-                    <h3>Rychlé jednání</h3>
+                    <h3>Rychlé dodání</h3>
                 </div>
-                <p>Vaše potřeby a požadavky sjednáme co nejdříve a to maximálně do 3 pracovních dnů.</p>
+                <p>Naše zboží doručíme do 24 hodin, pokud je skladem. Naše zboží doručíme do 24 hodin, pokud je skladem.</p>
             </div>
 
             <div class="feature">
                 <div class="feature-head">
                     <span class="feature-icon icon-time"></span>
-                    <h3>Kvalitní suroviny</h3>
+                    <h3>Kvalitní dřevo</h3>
                 </div>
-                <p>Naše suroviny jsou kupovány od nelepších poskytovatelů v okolí.</p>
+                <p>Naše dřevo je vybrané z nejlepších lesů a je zpracováváno na nejmodernějších zařízeních.</p>
             </div>
 
             <div class="feature">
                 <div class="feature-head">
                     <span class="feature-icon icon-time"></span>
-                    <h3>Balíčky na míruj</h3>
+                    <h3>Produkty na míru</h3>
                 </div>
-                <p>Dle vašich potřeb přizpůsobíme vše, co bude třeba k poskytnutí nejlepšího plánu.</p>
+                <p>Naše produkty jsou na míru Vašim potřebám. Můžeme Vám dle Vašeho přání přizpůsobit jakýkoliv produkt.</p>
             </div>
 
             <div class="feature">
                 <div class="feature-head">
                     <span class="feature-icon icon-time"></span>
-                    <h3>Doprava po celé Moravě</h3>
+                    <h3>Velký výběr materiálů</h3>
                 </div>
-                <p>Díky partnerství s místními podnikately nabízíme dopravu po celé Moravské části ČR.</p>
+                <p>Vyberte si z široké škály typů dřeva, které jsou naše firma schopna zajistit a zpracovat.</p>
             </div>
 
             <div class="feature">
                 <div class="feature-head">
                     <span class="feature-icon icon-time"></span>
-                    <h3>Sleva v případě problému</h3>
+                    <h3>Záruka až 10 let</h3>
                 </div>
-                <p>V případě, že nebudete spokojeni s naší službou, nabízíme slovu až 60% na celý nákup.</p>
+                <p>Za svou prací si stojíme a proto Vám nabízíme záruku až 10 let na vybrané produkty.</p>
             </div>
 
             <div class="feature">
@@ -86,40 +84,45 @@
                     <span class="feature-icon icon-time"></span>
                     <h3>Speciální požadavky</h3>
                 </div>
-                <p>Pokud máte speciální požadavky, můžeme Vám dle Vašeho přání přizpůsobit naše služby.</p>
+                <p>Pokud máte speciální požadavky, můžeme Vám dle Vašeho přání přizpůsobit jakýkoliv produkt.</p>
             </div>
 
-            
         </div>
-
-    </div>
-
-    <div class="cta theme-primary">
-        <h2>Zaujali jsme Vás?</h2>
-        <button class="btn">Kontaktujte nás</button>
-    </div>
-
-    <script>
-        const themeSwitch = document.querySelector('.theme-switch');
-
-        themeSwitch.addEventListener('click', () => {
-
-            //když má tlačítko třídu dark, tak ji odebereme a naopak
-            if (themeSwitch.classList.contains('dark')) {
-
-                themeSwitch.classList.remove('dark');
-                document.body.classList.remove('dark-theme');
+        <div class="container">
+            <div class="block">
+                <img src="https://thisimagedoesnotexist.com/images/82.jpeg" alt="Služba 1">
+                <h3>Toto je nadpis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="block block-reverse">
+                <img src="https://thisimagedoesnotexist.com/images/267.jpeg" alt="Služba 2">
+                <h3>Toto je nadpis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="block">
+                <img src="https://thisimagedoesnotexist.com/images/6.jpeg" alt="Služba 3">
+                <h3>Toto je nadpis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <a href="#">Domů</a>
+                    <a href="#">O nás</a>
+                    <a href="#">Kontakt</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; Jakub Škrabal.</p>
+            </div>
+        </footer>
+        <script>
             
-            } else {
-                
-                themeSwitch.classList.add('dark');
-                document.body.classList.add('dark-theme');
-            
-            }
-
-        });
-
-    </script>
-
+        </script>
 </body>
 </html>
