@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -11,13 +12,14 @@
     <div id="website">
         <header>
             <div class="logo">
-                <img src="logo.png" alt="Food4u">
+                Food4u
             </div>
             <nav>
                 <ul>
                     <li><a href="#">Úvod</a></li>
-                    <li><a href="#">Služby</a></li>
+                    <li><a href="#">Produkty</a></li>
                     <li><a href="#">Kontakt</a></li>
+                    <li><span class="theme-switch"></span></li>
                 </ul>
             </nav>
         </header>
@@ -26,17 +28,98 @@
             <div class="banner-image">
             </div>
             <div class="banner-text">
-                <h1>Vítejte na cateringové službě Food4u</h1>
-                <p>Nabízíme spousty zajímavých nabídek</p>
+                <h1>Vítejte na naší webové stránce</h1>
+                <p>Nabízíme nejvyšší kvalitu cateringu</p>
             </div>
         </div>
 
-        <div style="max-width: 400px;padding: 60px;">
-            <h2>Dobrý den, toto je nadpis</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt ultricies. Nullam nec purus nec nunc</p>
+        <div class="cta">
+            <h2>Proč si vybrat naše produkty?</h2>
+            <p>Naše distribuce nabízí nejvyšší kvalitu potravin a libovolný výběr přizpůsobený vaším potřebám</p>
+        </div>
+
+
+        <div class="features">
+            
+            <div class="feature">
+                <div class="feature-head">
+                    <span class="feature-icon icon-time"></span>
+                    <h3>Rychlé jednání</h3>
+                </div>
+                <p>Vaše potřeby a požadavky sjednáme co nejdříve a to maximálně do 3 pracovních dnů.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-head">
+                    <span class="feature-icon icon-time"></span>
+                    <h3>Kvalitní suroviny</h3>
+                </div>
+                <p>Naše suroviny jsou kupovány od nelepších poskytovatelů v okolí.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-head">
+                    <span class="feature-icon icon-time"></span>
+                    <h3>Balíčky na míruj</h3>
+                </div>
+                <p>Dle vašich potřeb přizpůsobíme vše, co bude třeba k poskytnutí nejlepšího plánu.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-head">
+                    <span class="feature-icon icon-time"></span>
+                    <h3>Doprava po celé Moravě</h3>
+                </div>
+                <p>Díky partnerství s místními podnikately nabízíme dopravu po celé Moravské části ČR.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-head">
+                    <span class="feature-icon icon-time"></span>
+                    <h3>Sleva v případě problému</h3>
+                </div>
+                <p>V případě, že nebudete spokojeni s naší službou, nabízíme slovu až 60% na celý nákup.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-head">
+                    <span class="feature-icon icon-time"></span>
+                    <h3>Speciální požadavky</h3>
+                </div>
+                <p>Pokud máte speciální požadavky, můžeme Vám dle Vašeho přání přizpůsobit naše služby.</p>
+            </div>
+
+            
         </div>
 
     </div>
+
+    <div class="cta theme-primary">
+        <h2>Zaujali jsme Vás?</h2>
+        <button class="btn">Kontaktujte nás</button>
+    </div>
+
+    <script>
+        const themeSwitch = document.querySelector('.theme-switch');
+
+        themeSwitch.addEventListener('click', () => {
+
+            //když má tlačítko třídu dark, tak ji odebereme a naopak
+            if (themeSwitch.classList.contains('dark')) {
+
+                themeSwitch.classList.remove('dark');
+                document.body.classList.remove('dark-theme');
+            
+            } else {
+                
+                themeSwitch.classList.add('dark');
+                document.body.classList.add('dark-theme');
+            
+            }
+
+        });
+
+    </script>
 
 </body>
 </html>
