@@ -57,7 +57,7 @@ nav ul li a:hover {
     color: var(--secondary-color);
 }
 
-.baner {
+.banner {
     width: 100%;
     height: 500px;
     background-image: url('banner.png');
